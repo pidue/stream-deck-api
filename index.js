@@ -19,5 +19,6 @@ streamDeck.on('state', (state) => {
 
 process.on('SIGINT', () => {
   streamDeck.reset()
+  streamDeck.close()
   process.exit()
 });
